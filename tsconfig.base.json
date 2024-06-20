@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-roma/call-for-papers": ["libs/call-for-papers/src/index.ts"],
+      "@angular-roma/events": ["libs/events/src/index.ts"],
+      "@angular-roma/sponsors": ["libs/sponsors/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
