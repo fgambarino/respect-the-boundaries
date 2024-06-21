@@ -1,6 +1,8 @@
-<form [formGroup]="fg" (ngSubmit)="onSubmit()">
-  <input type="text" formControlName="name" placeholder="Nome e cognome" name="name" id="name">
-  <input type="email" formControlName="email" placeholder="email@provider.com" name="email" id="email">
-  <textarea formControlName="text" placeholder="Scrivi qui la tua proposta" name="text" id="text"></textarea>
-  <lib-button title="Salva"/>
-</form>
+<lib-fancy-background>
+  <form [formGroup]="fg" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="name" placeholder="Nome e cognome" name="name" id="name">
+    <input type="email" formControlName="email" placeholder="email@provider.com" name="email" id="email">
+    <textarea formControlName="text" placeholder="Scrivi qui la tua proposta" name="text" id="text"></textarea>
+    <lib-button title="Salva"/>
+  </form>
+</lib-fancy-background>

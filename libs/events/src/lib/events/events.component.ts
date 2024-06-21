@@ -1,11 +1,12 @@
 import {Component, OnInit, signal} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {EventFormComponent} from "../components/event-form/event-form.component";
+import {FancyBackgroundComponent} from "../components/fancy-background/fancy-background.component";
 
 @Component({
   selector: 'lib-events',
   standalone: true,
-  imports: [CommonModule, EventFormComponent],
+  imports: [CommonModule, EventFormComponent, FancyBackgroundComponent],
   templateUrl: './events.component.html',
   styleUrl: './events.component.css',
 })

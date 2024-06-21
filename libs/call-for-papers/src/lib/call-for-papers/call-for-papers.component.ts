@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ButtonComponent} from "../../../../sponsors/src/lib/components/button/button.component";
+import {
+  FancyBackgroundComponent
+} from "../../../../events/src/lib/components/fancy-background/fancy-background.component";
 
 @Component({
   selector: 'lib-call-for-papers',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonComponent],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonComponent, FancyBackgroundComponent],
   templateUrl: './call-for-papers.component.html',
   styleUrl: './call-for-papers.component.css',
 })

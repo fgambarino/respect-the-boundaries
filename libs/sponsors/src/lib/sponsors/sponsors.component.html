@@ -1,7 +1,9 @@
-<form [formGroup]="fg" (ngSubmit)="onSubmit()">
-  <input type="text" formControlName="name" placeholder="Nome dello sponsor" name="name" id="name">
-  <div>
-    <input type="checkbox" formControlName="beer" name="beer" id="beer"><label for="beer">Offre la birra?</label>
-  </div>
-  <lib-button title="Salva"/>
-</form>
+<lib-fancy-background>
+  <form [formGroup]="fg" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="name" placeholder="Nome dello sponsor" name="name" id="name">
+    <div>
+      <input type="checkbox" formControlName="beer" name="beer" id="beer"><label for="beer">Offre la birra?</label>
+    </div>
+    <lib-button title="Salva"/>
+  </form>
+</lib-fancy-background>
