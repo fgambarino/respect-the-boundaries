@@ -23,6 +23,18 @@
               {
                 "sourceTag": "type:util",
                 "onlyDependOnLibsWithTags": ["type:util"]
+              },
+              {
+                "sourceTag": "scope:bo",
+                "onlyDependOnLibsWithTags": ["scope:bo", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:fo",
+                "onlyDependOnLibsWithTags": ["scope:fo", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
               }
             ]
           }

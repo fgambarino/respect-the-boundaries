@@ -4,7 +4,7 @@
   "sourceRoot": "libs/call-for-papers/src",
   "prefix": "lib",
   "projectType": "library",
-  "tags": ["type:feature"],
+  "tags": ["type:feature", "scope:fo"],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
