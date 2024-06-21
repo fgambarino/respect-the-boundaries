@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ButtonComponent} from "../../../../sponsors/src/lib/components/button/button.component";
+import {ButtonComponent} from "@angular-roma/sponsors";
 import {
   FancyBackgroundComponent
-} from "../../../../events/src/lib/components/fancy-background/fancy-background.component";
+} from "@angular-roma/events";
 
 @Component({
   selector: 'lib-call-for-papers',

@@ -4,7 +4,7 @@ import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ButtonComponent} from "../components/button/button.component";
 import {
   FancyBackgroundComponent
-} from "../../../../events/src/lib/components/fancy-background/fancy-background.component";
+} from "@angular-roma/events";
 
 @Component({
   selector: 'lib-sponsors',
