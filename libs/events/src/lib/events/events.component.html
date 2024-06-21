@@ -1,1 +1,13 @@
-<p>events works!</p>
+@if (isAdmin()) {
+  <lib-event-form (eventSubmit)="handleSubmit($event)"/>
+  <br/>
+}
+<h3>Prossimi eventi:</h3>
+@for (event of events(); track event.name; let last = $last) {
+  <p><strong>Evento:</strong> {{ event.name }}</p>
+  <p>{{ event.date }}</p>
+  <p><strong>Speaker:</strong> {{ event.speaker }}</p>
+  @if(!last){
+    <hr>
+  }
+}

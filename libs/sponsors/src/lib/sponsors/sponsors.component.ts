@@ -1,11 +1,28 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ButtonComponent} from "../components/button/button.component";
 
 @Component({
   selector: 'lib-sponsors',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonComponent],
   templateUrl: './sponsors.component.html',
   styleUrl: './sponsors.component.css',
 })
-export class SponsorsComponent {}
+export class SponsorsComponent {
+  fg = new FormBuilder().nonNullable.group({
+    name: '',
+    beer: false
+  })
+
+  onSubmit() {
+    if (this.fg.value.beer) {
+      alert('Approvato!');
+      this.fg.reset();
+    } else {
+      alert('Pensiamoci su');
+    }
+  }
+
+}
