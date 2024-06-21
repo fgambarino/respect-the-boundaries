@@ -1,11 +1,12 @@
 import {Component, output} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ButtonComponent} from "../../../../../sponsors/src/lib/components/button/button.component";
 
 @Component({
   selector: 'lib-event-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonComponent],
   templateUrl: './event-form.component.html',
   styleUrl: './event-form.component.css',
 })
