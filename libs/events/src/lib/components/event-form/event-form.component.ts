@@ -1,7 +1,7 @@
 import {Component, output} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ButtonComponent} from "@angular-roma/sponsors";
+import {ButtonComponent} from "@angular-roma/ui-kit";
 
 @Component({
   selector: 'lib-event-form',

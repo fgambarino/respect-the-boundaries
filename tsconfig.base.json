@@ -17,7 +17,8 @@
     "paths": {
       "@angular-roma/call-for-papers": ["libs/call-for-papers/src/index.ts"],
       "@angular-roma/events": ["libs/events/src/index.ts"],
-      "@angular-roma/sponsors": ["libs/sponsors/src/index.ts"]
+      "@angular-roma/sponsors": ["libs/sponsors/src/index.ts"],
+      "@angular-roma/ui-kit": ["libs/ui-kit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

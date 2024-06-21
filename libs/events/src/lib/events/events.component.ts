@@ -1,7 +1,7 @@
 import {Component, OnInit, signal} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {EventFormComponent} from "../components/event-form/event-form.component";
-import {FancyBackgroundComponent} from "../components/fancy-background/fancy-background.component";
+import {FancyBackgroundComponent} from "@angular-roma/ui-kit";
 
 @Component({
   selector: 'lib-events',
